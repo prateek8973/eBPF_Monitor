@@ -12,7 +12,7 @@
 1. Unable to use pre-installed `bcc` tools
 
 - Could be because of a deprecated package
-	- Can try:`rm /usr/lib/python3/dist-packages/bcc`
+	- Can try:`rm /usr/lib/python3/dist-packages/bcc`(**Note!: This might be different on your system**)
 
 ### Grafana Dashboard
 
