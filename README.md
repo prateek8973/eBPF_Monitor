@@ -5,6 +5,14 @@
 - bcc
 - clang
 - llvm
+- python3 bindings(installed if bcc is built correctly)
+
+### FAQ
+
+1. Unable to use pre-installed `bcc` tools
+
+- Could be because of a deprecated package
+	- Can try:`rm /usr/lib/python3/dist-packages/bcc`
 
 ### Grafana Dashboard
 
