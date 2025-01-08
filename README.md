@@ -28,3 +28,11 @@
 - Setup the Prometheus client 
 - Export the data to the prometheus client
 
+### How to simulate this?
+
+- Open a terminal, and Run `sudo python3 bpf_monitor.py`.
+- Open another terminal and run `allocator.c`
+	- `gcc allocator.c -o allocator`
+	- `./allocator`
+- If proemtheus and grafana are setup correctly, you should be able to see the metrics and data.
+ 
