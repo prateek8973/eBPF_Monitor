@@ -1,7 +1,6 @@
 from bcc import BPF
 from prometheus_client import start_http_server, Gauge
 import time
-import os
 
 # BPF program
 bpf_program = """
@@ -34,7 +33,7 @@ start_http_server(8000)
 
 def update_metrics():
     # Update the memory allocation counts as Prometheus metrics
-    for (pid, count) in b["counter"].items():
+    for pid, count in b["counter"].items():
         allocations_gauge.labels(pid=pid.value).set(count.value)
 
 print("Monitoring malloc...")
